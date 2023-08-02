@@ -1,22 +1,60 @@
-.container {
+.row {
     display: flex;
-    height: 100px;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 header {
-    background-color:#E6E6FA; 
+    background-color:#18443f; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(251, 248, 248);
+    height: 300px;
+    border-radius:10px;
+    transition:ease;
+    padding:10px;
+    }
+
+img.koala {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+a:unvisited {
+    color: rgb(9, 9, 9);
+  }
+
+a:visited {
+    color: rgb(12, 152, 91);
+}
+
+a:hover {
+    color:#9814ac;
+}
+
+a:active {
+    color:#cacdcb;
 }
 
 body {
-    color: #070808
+    background-color: #0a1313;
 }
 
 .about {
-    background-color: #cacdcb
+    margin: 5px;
+    border: 5px;
+    padding: 10px;
+    background-color: #cacdcb;
+    border-radius:10px;
+    transition:ease;
+    box-shadow: inset 0px 0px 10px
+    rgb(65, 188, 77), 
+    0 0 15px 
+    rgb(50, 225, 82);
+}
+
+.about-jabber {
+    display:flex;
+    flex-wrap:wrap;
 }
 
 p {
@@ -26,4 +64,31 @@ p {
 
 .work {
     background-color:  #cacdcb;
+    margin: 5px;
+    border: 5px;
+    padding: 10px;
+    background-color: #cacdcb;
+    border-radius:10px;
+    transition:ease;
+    box-shadow: inset 0px 0px 10px
+    rgb(65, 188, 77), 
+    0 0 15px 
+    rgb(50, 225, 82);
+}
+
+.work-jabber {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+a.smiley {
+    border-width: 20px;
+    border-radius: 20px;
+    transition: all.5s ease-in-out;
+    position:relative;
+    margin-top: -20px;
+}
+
+a.smiley:hover {
+    
 }
