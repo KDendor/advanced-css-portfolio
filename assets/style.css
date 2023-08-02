@@ -1,18 +1,35 @@
-.row {
+
+* {
+    box-sizing: border-box;
+  }
+
+  .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+  }
 
 header {
-    background-color:#18443f; 
+    background-color:#83a395; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(251, 248, 248);
-    height: 300px;
+    color:rgb(2, 5, 4);
+    min-height: 300px;
     border-radius:10px;
     transition:ease;
     padding:10px;
+    background-image: url(/assets/images/shark-nom-nom.png); 
+    background-size: cover;
+    /* max-height:100%; max-width:100%; */
     }
+
+header p {
+    color: #fff;
+}
+
+.inline-layout {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 img.koala {
     justify-content: flex-end;
@@ -20,26 +37,30 @@ img.koala {
 }
 
 a:unvisited {
-    color: rgb(9, 9, 9);
+    color: rgb(47, 12, 173);
   }
 
 a:visited {
-    color: rgb(12, 152, 91);
+    color: rgb(112, 12, 152);
 }
 
 a:hover {
-    color:#9814ac;
+    color:#ea2ad0;
 }
 
 a:active {
-    color:#cacdcb;
+    color:#22ce5b;
+}
+
+.image-border {
+    border: 2px solid #000;
 }
 
 body {
     background-color: #0a1313;
 }
 
-.about {
+#about {
     margin: 5px;
     border: 5px;
     padding: 10px;
@@ -47,9 +68,11 @@ body {
     border-radius:10px;
     transition:ease;
     box-shadow: inset 0px 0px 10px
-    rgb(65, 188, 77), 
+    rgb(11, 30, 14), 
     0 0 15px 
     rgb(50, 225, 82);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .about-jabber {
@@ -57,12 +80,27 @@ body {
     flex-wrap:wrap;
 }
 
+#contact {
+    margin: 5px;
+    border: 5px;
+    padding: 10px;
+    background-color: #cacdcb;
+    border-radius:10px;
+    transition:ease;
+    box-shadow: inset 0px 0px 10px
+    rgb(11, 30, 14), 
+    0 0 15px 
+    rgb(50, 225, 82);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
 p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:large;
 }
 
-.work {
+#work {
     background-color:  #cacdcb;
     margin: 5px;
     border: 5px;
@@ -71,24 +109,27 @@ p {
     border-radius:10px;
     transition:ease;
     box-shadow: inset 0px 0px 10px
-    rgb(65, 188, 77), 
+    rgb(11, 30, 14), 
     0 0 15px 
     rgb(50, 225, 82);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .work-jabber {
     display:flex;
     flex-wrap:wrap;
 }
-
-a.smiley {
-    border-width: 20px;
+/*
+#smiley {
+    border-style: outset;
+    border: solid #18443f;
+    border-width: medium;
     border-radius: 20px;
-    transition: all.5s ease-in-out;
-    position:relative;
-    margin-top: -20px;
 }
+*/
 
 a.smiley:hover {
     
 }
+
