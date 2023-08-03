@@ -3,22 +3,22 @@
     box-sizing: border-box;
   }
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .wrapper-main {
+    width: 1000px;
+    padding: 100px 0;
+    margin: 0 auto;
   }
 
 header {
+    background-image: url(/assets/images/shark-nom-nom.png); 
+    background-size: cover; max-width: 100%; max-height: 100%;
     background-color:#83a395; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(2, 5, 4);
+    color:rgb(244, 248, 245);
     min-height: 300px;
     border-radius:10px;
     transition:ease;
     padding:10px;
-    background-image: url(/assets/images/shark-nom-nom.png); 
-    background-size: cover;
     /* max-height:100%; max-width:100%; */
     }
 
@@ -34,6 +34,10 @@ header p {
 img.koala {
     justify-content: flex-end;
     align-items: flex-start;
+    border: solid;
+    border-color:#a35d12;
+    border-width: medium;
+    margin: 10px;
 }
 
 a:unvisited {
@@ -53,7 +57,14 @@ a:active {
 }
 
 .image-border {
-    border: 2px solid #000;
+    border: 2px solid #a35d12;
+    border-radius: 15%;
+    border-width: medium;
+    box-shadow: inset 0px 0px 10px
+    rgb(193, 189, 71), 
+    0 0 15px 
+    rgb(177, 75, 11);
+    
 }
 
 body {
@@ -91,8 +102,7 @@ body {
     rgb(11, 30, 14), 
     0 0 15px 
     rgb(50, 225, 82);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 
 p {
@@ -129,7 +139,21 @@ p {
 }
 */
 
-a.smiley:hover {
-    
+@media (max-width: 600px) {
+    .wrapper-main {
+        width: 100%;
+      }
+}
+
+@media (max-width: 768px) {
+    .wrapper-main {
+        width: 100%;
+      }
+}
+
+@media (max-width: 992px) {
+    .wrapper-main {
+        width: 100%;
+      }
 }
 
